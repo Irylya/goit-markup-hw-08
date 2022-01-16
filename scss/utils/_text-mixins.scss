@@ -13,25 +13,25 @@
 // .project__title
 // .feature__title
 
-@mixin text-title($weiht, $size, $height, $align) {
+@mixin text-title($weiht, $height) {
   font-weight: $weiht;
-  font-size: $size;
+  // font-size: $size;
   line-height: $height;
   color: var(--tittle-text-color);
-  text-align: $align;
+  // text-align: $align;
 }
 
 // .footer__title
 // .hero__title
 // .what-we-do__title
 
-@mixin text-title-second($weiht, $size, $height, $align) {
+@mixin text-title-second($weiht) {
   font-weight: $weiht;
-  font-size: $size;
-  line-height: $height;
+  // font-size: $size;
+  // line-height: $height;
   text-transform: uppercase;
   color: var(--second-acsent-color);
-  text-align: $align;
+  // text-align: $align;
 }
 
 // .filter-button
@@ -57,21 +57,4 @@
 @mixin f-size-height($size, $height) {
   font-size: $size;
   line-height: $height;
-}
-
-@mixin f-size-height-spacing($size, $height, $spacing) {
-  font-size: $size;
-  line-height: $height;
-  letter-spacing: $spacing;
-}
-
-@mixin overlay {
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--second-acsent-color);
-}
-
-@mixin acsent-color-fill {
-  color: var(--acsent-color);
-  fill: var(--acsent-color);
 }
