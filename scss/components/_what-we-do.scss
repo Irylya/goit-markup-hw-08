@@ -1,13 +1,19 @@
+.what-we-do__section {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .what-we-do {
   @include flex-wrap;
+  margin: -15px;
 }
 
 .what-we-do__item {
   position: relative;
 
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
+  @include grid(3, 15px);
 }
 
 .what-we-do__title {
@@ -25,7 +31,10 @@
 
   background: rgba(47, 48, 58, 0.8);
 
-  @include text-title-second(700, 14px, 1.14, center);
+  @include text-title-second(700);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
 
   opacity: 1;
   transition: opacity var(--shift);
