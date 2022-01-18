@@ -18,13 +18,33 @@
   flex-wrap: wrap;
 }
 
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin column-center {
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin centered-content-width-height($width, $height) {
-  // флекс з центруванням контенту посередині p hjpvshfvb
+  // флекс з центруванням контенту посередині з розмірами
   display: flex;
   justify-content: center;
   align-items: center;
   width: $width;
   height: $height;
+}
+
+@mixin centered-content-square($side) {
+  // флекс з центруванням контенту посередині з розміром, квадратний
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $side;
+  height: $side;
 }
 
 @mixin block-width-height($width, $height) {
@@ -50,4 +70,12 @@
 @mixin square-size($side) {
   width: $side;
   height: $side;
+}
+
+// інші міксини
+
+// міксин сітки
+@mixin grid($number, $margin) {
+  flex-basis: calc(100% / #{$number} - #{$margin} * 2);
+  margin: #{$margin};
 }

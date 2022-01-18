@@ -77,8 +77,20 @@
                         <article class="project">
                             <a href="#" class="project__card link">
                                 <div class="project__image-box">
-                                    <img src="./images/technocrack.jpg" class="image"
-                                        alt="макбукпро с изображением карточек трех людей" width="370">
+                                    <picture>
+                                        <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
+                                        <source srcset="./images/technocrack/technocrack_mobile.jpg 1x, ./images/technocrack_mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)" />
+                                        <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
+                                        <source srcset="./images/technocrack/technocrack_tablet.jpg 1x, ./images/technocrack/technocrack_tablet@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1200px)" />
+                                        <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
+                                        <source srcset="./images/technocrack/technocrack_desktop.jpg 1x, ./images/technocrack/technocrack_desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)" />
+                                         <img src="./images/technocrack/technocrack_mobile.jpg" class="image" alt="макбукпро с изображением карточек трех людей">
+                                    </picture>
+                                    
+                                    
                                     <p class="project__overlay text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
                                         шпионажа и атак на защищённые сервера конкурентов.

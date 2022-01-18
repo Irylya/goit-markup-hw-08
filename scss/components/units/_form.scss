@@ -7,7 +7,10 @@
   margin: 0 auto;
   margin-bottom: 12px;
 
-  @include text-title(700, 20px, 1.15, center);
+  @include text-title(700, 1.15);
+  font-size: 20px;
+
+  text-align: center;
 }
 
 .form-box {

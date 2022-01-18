@@ -1,41 +1,3 @@
-.member__flip {
-  position: relative;
-
-  @include width-height(270px, 260px);
-
-  transform-style: preserve-3d;
-}
-
-.member__image {
-  position: absolute;
-  transform: rotateY(0deg);
-
-  .member__flip:hover & {
-    transform: rotateY(180deg);
-  }
-}
-
-.member__overlay {
-  transform: rotateY(-180deg);
-
-  @include square(100%);
-
-  padding: 64px 24px;
-
-  @include overlay;
-
-  background-color: var(--acsent-color-transparent);
-
-  .member__flip:hover & {
-    transform: rotateY(0deg);
-  }
-}
-
-.member__image,
-.member__overlay {
-  transition: transform var(--shift);
-}
-
 .member__content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -52,7 +14,7 @@
 
 .member__title,
 .member__position {
-  @include f-size-height(16px, 1.19);
+  @include f-size-height(16px, 1.17);
 }
 
 .member__social-links {

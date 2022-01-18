@@ -39,7 +39,8 @@
 .project__title {
   margin-bottom: 4px;
 
-  @include text-title(700, 18px, 2, start);
+  @include text-title(700, 2);
+  font-size: 18px;
 
   letter-spacing: 0.06em;
 }

@@ -58,3 +58,20 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin f-size-height-spacing($size, $height, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin overlay {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--second-acsent-color);
+}
+
+@mixin acsent-color-fill {
+  color: var(--acsent-color);
+  fill: var(--acsent-color);
+}
