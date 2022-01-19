@@ -1,4 +1,15 @@
+.project {
+  display: flex;
+  align-items: stretch;
+}
+.project__card {
+  display: flex;
+  align-items: stretch;
+
+  flex-direction: column;
+}
 .project__content {
+  flex-grow: 1;
   $border: 1px solid #eeeeee;
 
   padding: 20px 24px;

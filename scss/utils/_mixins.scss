@@ -72,9 +72,19 @@
   height: $side;
 }
 
+//міксини відступпппппів
+@mixin margin-gorizontal($size) {
+  margin-right: $size;
+  margin-left: $size;
+}
+
+@mixin margin-verlical($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
 // інші міксини
 
-// міксин сітки
+// міксин сітки, ДОДАТИ "-$margin" БАТЬКІВСЬКОМУ ЕЛЕМЕНТУ
 @mixin grid($number, $margin) {
   flex-basis: calc(100% / #{$number} - #{$margin} * 2);
   margin: #{$margin};

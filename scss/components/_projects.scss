@@ -1,19 +1,32 @@
 .projects__container {
-  margin-top: 34px;
 }
 
 .projects {
-  @include flex-wrap;
-
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    @include flex-wrap;
+    margin: -15px;
+  }
 }
 
 .projects__item {
-  flex-basis: calc(100% / 3 - 30px);
+  display: flex;
+  align-items: stretch;
 
-  margin-top: 30px;
-  margin-left: 30px;
+  max-width: 450px;
+
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include grid(2, 15px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid(3, 15px);
+  }
 
   background-color: var(--primary-bg-color);
 
