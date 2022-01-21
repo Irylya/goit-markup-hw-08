@@ -18,7 +18,11 @@
   display: block;
   width: 100%;
 
-  @include f-size-height-spacing(12px, 1.17, 0.01em);
+  @include f-size-height-spacing(12px, 1.5, 0.01em);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.17;
+  }
 
   & + & {
     margin-top: 10px;
