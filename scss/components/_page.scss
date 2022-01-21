@@ -1,5 +1,10 @@
-body.modal-open {
-  overflow: hidden;
+body {
+  &.modal-open {
+    overflow: hidden;
+  }
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 .page {
   font-family: var(--primary-font);

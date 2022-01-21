@@ -127,6 +127,14 @@
   }
 }
 
+.form-policy__text {
+  @include f-size-height(12px, 1.17);
+
+  @media screen and (min-width: 1200px) {
+    @include f-size-height(14px, 1.71);
+  }
+}
+
 .form-policy__link {
   text-decoration-line: underline;
   color: var(--acsent-color);

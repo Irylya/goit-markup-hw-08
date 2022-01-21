@@ -328,6 +328,9 @@ summary {
 body.modal-open {
   overflow: hidden;
 }
+body.menu-open {
+  overflow: hidden;
+}
 
 .page {
   font-family: var(--primary-font);
@@ -557,7 +560,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .menu-conteiner {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1558,6 +1561,17 @@ body.modal-open {
 .form-policy__checkbox:checked:focus + .form-policy__icon {
   outline: 1px solid;
   outline-color: var(--tittle-text-color);
+}
+
+.form-policy__text {
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .form-policy__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-policy__link {
