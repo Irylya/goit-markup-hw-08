@@ -7,9 +7,6 @@
   background-color: var(--primary-bg-color);
 }
 
-.header__container {
-}
-
 .navigation {
   @include centered-Y-content;
   justify-content: space-between;
@@ -33,6 +30,7 @@
     display: none;
   }
 }
+
 .menu-button_box {
   @include square-size(19px);
 }
@@ -45,6 +43,7 @@
     opacity: 1;
   }
 }
+
 .icon-close {
   .menu-button.is-open & {
     opacity: 1;
@@ -89,12 +88,14 @@
     margin-right: auto;
     margin-left: auto;
   }
+
   @media screen and (min-width: 768px) {
     width: 100%;
     @include centered-Y-content;
     justify-content: space-between;
   }
 }
+
 .navigation__tabs {
   @media screen and (min-width: 768px) {
     @include centered-Y-content;
