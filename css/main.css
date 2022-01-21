@@ -673,16 +673,22 @@ body.modal-open {
   }
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .contacts {
     margin-top: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -691,7 +697,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .contacts__item + .contacts__item {
-    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
