@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
+    <meta name="description" content="Качественный продукт вовремя">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -68,10 +69,10 @@
                         </ul>
                         
                         <ul class="navigation__item navigation__networks list">
-                            <li class="navigation__network"><a href="#" class="navigation__network-link link">Instagram</a></li>
-                            <li class="navigation__network"><a href="#" class="navigation__network-link link">Twitter</a></li>
-                            <li class="navigation__network"><a href="#" class="navigation__network-link link">Facebook</a></li>
-                            <li class="navigation__network"><a href="#" class="navigation__network-link link">LinkedIn</a></li>
+                            <li class="navigation__network"><a href="#" aria-label="инстаграм" class="navigation__network-link link">Instagram</a></li>
+                            <li class="navigation__network"><a href="#" aria-label="твиттер" class="navigation__network-link link">Twitter</a></li>
+                            <li class="navigation__network"><a href="#" aria-label="фейсбук" class="navigation__network-link link">Facebook</a></li>
+                            <li class="navigation__network"><a href="#" aria-label="линкедин" class="navigation__network-link link">LinkedIn</a></li>
                         </ul>
                    </div>
                    
@@ -96,7 +97,7 @@
         <!-- Наші переваги -->
         <section class="section">
             <div class="container">
-                <h2 hidden class="section__title">Наши преимущества</h2>
+                <h2  class="section__title visually-hidden">Наши преимущества</h2>
                 
                 <ul class="feature list">
                     <li class="feature__item">
@@ -190,6 +191,7 @@
                 <ul class="team list">
                     <li class="team__item">
                        <article class="member">
+                           <div class="member__flip">  
                             <picture>
                                 <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
                                 <source srcset="./images/igor_d/igor_d_mobile.jpg 1x, ./images/igor_d/igor_d_mobile@2x.jpg 2x" media="(max-width: 767px)"/>
@@ -198,8 +200,15 @@
                                 <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
                                 <source srcset="./images/igor_d/igor_d_desktop.jpg 1x, ./images/igor_d/igor_d_desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
                                 <img src="./images/igor_d/igor_d_mobile.jpg" class="member__image image" alt="Игорь Демьяненко">
-                            </picture>
-                                                    
+                                </picture>
+                            
+                                <p class="member__overlay text">
+                                    Здесь будет краткая информация о квалификации Игоря Демьянченко
+
+                                </p>
+
+                            </div>
+
                             <div class="member__content">
                                 <h3 class="member__title text">Игорь Демьяненко</h3>
                                 <p class="member__position text">Product Designer</p>
@@ -242,15 +251,23 @@
 
                     <li class="team__item">
                         <article class="member">
-                            <picture>
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
-                                <source srcset="./images/olga_r/olga_r_mobile.jpg 1x, ./images/olga_r/olga_r_mobile@2x.jpg 2x"  media="(max-width: 767px)">
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
-                                <source srcset="./images/olga_r/olga_r_tablet.jpg 1x, ./images/olga_r/olga_r_tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
-                                <source srcset="./images/olga_r/olga_r_desktop.jpg 1x, ./images/olga_r/olga_r_desktop@2x.jpg 2x"  media="(min-width: 1200px)">
-                                <img src="./images/olga_r/olga_r_mobile.jpg" class="image" alt="Ольга Репина">
-                            </picture>
+                            <div class="member__flip">
+                                <picture>
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
+                                    <source srcset="./images/olga_r/olga_r_mobile.jpg 1x, ./images/olga_r/olga_r_mobile@2x.jpg 2x"  media="(max-width: 767px)">
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
+                                    <source srcset="./images/olga_r/olga_r_tablet.jpg 1x, ./images/olga_r/olga_r_tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
+                                    <source srcset="./images/olga_r/olga_r_desktop.jpg 1x, ./images/olga_r/olga_r_desktop@2x.jpg 2x"  media="(min-width: 1200px)">
+                                    <img src="./images/olga_r/olga_r_mobile.jpg" class="member__image image" alt="Ольга Репина">
+                                </picture>
+
+                                <p class="member__overlay text">
+                                    Здесь будет краткая информация о квалификации Ольги Репиной
+                            
+                                </p>
+                            
+                            </div>
                             
                             <div class="member__content">
                                 <h3 class="member__title text">Ольга Репина</h3>
@@ -293,15 +310,23 @@
 
                     <li class="team__item">
                         <article class="member">
-                            <picture>
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
-                                <source srcset="./images/nikolay_t/nikolay_t_mobile.jpg 1x, ./images/nikolay_t/nikolay_t_mobile@2x.jpg 2x" media="(max-width: 767px)">
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
-                                <source srcset="./images/nikolay_t/nikolay_t_tablet.jpg 1x, ./images/nikolay_t/nikolay_t_tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
-                                <source srcset="./images/nikolay_t/nikolay_t_desktop.jpg 1x, ./images/nikolay_t/nikolay_t_desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                                <img src="./images/nikolay_t/nikolay_t_mobile.jpg" class="image" alt="Николай Тарасов">
-                            </picture>
+                            <div class="member__flip">
+                                <picture>
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
+                                    <source srcset="./images/nikolay_t/nikolay_t_mobile.jpg 1x, ./images/nikolay_t/nikolay_t_mobile@2x.jpg 2x" media="(max-width: 767px)">
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
+                                    <source srcset="./images/nikolay_t/nikolay_t_tablet.jpg 1x, ./images/nikolay_t/nikolay_t_tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
+                                    <source srcset="./images/nikolay_t/nikolay_t_desktop.jpg 1x, ./images/nikolay_t/nikolay_t_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./images/nikolay_t/nikolay_t_mobile.jpg" class="member__image image" alt="Николай Тарасов">
+                                </picture>
+
+                                <p class="member__overlay text">
+                                    Здесь будет краткая информация о квалификации Николая Тарвсова
+                            
+                                </p>
+                            
+                            </div>
                               
                     
                             <div class="member__content">
@@ -345,15 +370,23 @@
 
                     <li class="team__item">
                         <article class="member">
-                            <picture>
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
-                                <source srcset="./images/mihail_ye/mihail_ye_mobile.jpg 1x, ./images/mihail_ye/mihail_ye_mobile@2x.jpg 2x" media="(max-width: 767px)">
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
-                                <source srcset="./images/mihail_ye/mihail_ye_tablet.jpg 1x, ./images/mihail_ye/mihail_ye_tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
-                                <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
-                                <source srcset="./images/mihail_ye/mihail_ye_desktop.jpg 1x, ./images/mihail_ye/mihail_ye_desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                                <img src="./images/mihail_ye/mihail_ye_mobile.jpg" class="image" alt="Михаил Ермаков">
-                            </picture>
+                            <div class="member__flip">
+                                <picture>
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(max-width: 767px)"> -->
+                                    <source srcset="./images/mihail_ye/mihail_ye_mobile.jpg 1x, ./images/mihail_ye/mihail_ye_mobile@2x.jpg 2x" media="(max-width: 767px)">
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 768px) and (max-width: 1200px)"> -->
+                                    <source srcset="./images/mihail_ye/mihail_ye_tablet.jpg 1x, ./images/mihail_ye/mihail_ye_tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
+                                    <!-- <source srcset=" 1x,  2x"  type="image/webp" media="(min-width: 1200px)"> -->
+                                    <source srcset="./images/mihail_ye/mihail_ye_desktop.jpg 1x, ./images/mihail_ye/mihail_ye_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./images/mihail_ye/mihail_ye_mobile.jpg" class="member__image image" alt="Михаил Ермаков">
+                                </picture>
+
+                                <p class="member__overlay text">
+                                    Здесь будет краткая информация о квалификации Михаила Ермакова
+                            
+                                </p>
+                            
+                            </div>
                            
                             <div class="member__content">
                                 <h3 class="member__title text">Михаил Ермаков</h3>
@@ -566,7 +599,7 @@
                     
                 </label>
                 <label  class="form-policy">
-                    <input type="checkbox" class="form-policy__checkbox">
+                    <input type="checkbox" class="form-policy__checkbox visually-hidden">
                     <svg class="form-policy__icon">
                         <use href="./images/icons.svg#icon-check"></use>
                     </svg>
@@ -581,6 +614,8 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
+
+ <!-- Скрипт для автоматичного обраховування висоти хедера -->
     <!-- <script>
         const { height: pageHeaderHeight } = document
             .querySelector(".header")

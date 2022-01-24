@@ -91,15 +91,7 @@
   margin-top: 20px;
 }
 
-.form-policy__checkbox {
-  position: absolute;
-  @include square-size(1px);
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 
 .form-policy__icon {
   margin-right: 7px;
