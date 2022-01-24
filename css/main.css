@@ -500,10 +500,21 @@ body.menu-open {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 10;
   border-bottom: 1px solid #ececec;
   background-color: var(--primary-bg-color);
+}
+
+.header__fantom {
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__fantom {
+    height: 80px;
+  }
 }
 
 .navigation {
@@ -516,10 +527,11 @@ body.menu-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .navigation {
-    min-height: 60px;
+    height: 80px;
   }
 }
 
